@@ -23,7 +23,7 @@
 /// ---------------------------------
 
 /** A Track Point holds the coordinates, elevation, timestamp, and metadata for a single point in a track. */
-@property (strong, nonatomic, readonly) NSArray *trackpoints;
+@property (strong, nonatomic, readonly) NSArray<GPXTrackPoint *> *trackpoints;
 
 /** You can add extend GPX by adding your own elements from another schema here. */
 @property (strong, nonatomic) GPXExtensions *extensions;
@@ -53,7 +53,7 @@
 /** Adds the GPXTrackPoint objects contained in another given array to the end of the trackpoint array.
  @param array An array of GPXTrackPoint objects to add to the end of the trackpoint array.
  */
-- (void)addTrackpoints:(NSArray *)array;
+- (void)addTrackpoints:(NSArray<GPXTrackPoint *> *)array;
 
 
 /// ---------------------------------

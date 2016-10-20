@@ -35,7 +35,7 @@
 @property (strong, nonatomic) NSString *source;
 
 /** Links to external information about the route. */
-@property (strong, nonatomic, readonly) NSArray *links;
+@property (strong, nonatomic, readonly) NSArray<GPXLink *> *links;
 
 /** GPS route number. */
 @property (nonatomic, assign) NSInteger number;
@@ -47,7 +47,7 @@
 @property (strong, nonatomic) GPXExtensions *extensions;
 
 /** A list of route points. */
-@property (strong, nonatomic, readonly) NSArray *routepoints;
+@property (strong, nonatomic, readonly) NSArray<GPXRoutePoint *> *routepoints;
 
 
 /// ---------------------------------
@@ -73,7 +73,7 @@
 /** Adds the GPXLink objects contained in another given array to the end of the link array.
  @param array An array of GPXLink objects to add to the end of the link array.
  */
-- (void)addLinks:(NSArray *)array;
+- (void)addLinks:(NSArray<GPXLink *> *)array;
 
 
 /// ---------------------------------
@@ -110,7 +110,7 @@
 /** Adds the GPXRoutePoint objects contained in another given array to the end of the routepoint array.
  @param array An array of GPXRoutePoint objects to add to the end of the routepoint array.
  */
-- (void)addRoutepoints:(NSArray *)array;
+- (void)addRoutepoints:(NSArray<GPXRoutePoint *> *)array;
 
 
 /// ---------------------------------

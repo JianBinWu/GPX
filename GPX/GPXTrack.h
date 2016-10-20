@@ -36,7 +36,7 @@
 @property (strong, nonatomic) NSString *source;
 
 /** Links to external information about track. */
-@property (strong, nonatomic, readonly) NSArray *links;
+@property (strong, nonatomic, readonly) NSArray<GPXLink *> *links;
 
 /** GPS track number. */
 @property (nonatomic, assign) NSInteger number;
@@ -50,7 +50,7 @@
 /** A Track Segment holds a list of Track Points which are logically connected in order.
     To represent a single GPS track where GPS reception was lost, or the GPS receiver was turned off, 
     start a new Track Segment for each continuous span of track data. */
-@property (strong, nonatomic, readonly) NSArray *tracksegments;
+@property (strong, nonatomic, readonly) NSArray<GPXTrackSegment *> *tracksegments;
 
 
 /// ---------------------------------
@@ -76,7 +76,7 @@
 /** Adds the GPXLink objects contained in another given array to the end of the link array.
  @param array An array of GPXLink objects to add to the end of the link array.
  */
-- (void)addLinks:(NSArray *)array;
+- (void)addLinks:(NSArray<GPXLink *> *)array;
 
 
 /// ---------------------------------
@@ -111,7 +111,7 @@
 /** Adds the GPXTrackSegment objects contained in another given array to the end of the tracksegment array.
  @param array An array of GPXTrackSegment objects to add to the end of the tracksegment array.
  */
-- (void)addTracksegments:(NSArray *)array;
+- (void)addTracksegments:(NSArray<GPXTrackSegment *> *)array;
 
 
 /// ---------------------------------

@@ -270,4 +270,8 @@
     return result;
 }
 
+- (NSString *)description {
+    return [self gpx];
+}
+
 @end

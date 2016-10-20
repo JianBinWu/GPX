@@ -21,7 +21,7 @@
 /// ---------------------------------
 
 /** Ordered list of geographic points. */
-@property (strong, nonatomic, readonly) NSArray *points;
+@property (strong, nonatomic, readonly) NSArray<GPXPoint *> *points;
 
 
 /// ---------------------------------
@@ -48,7 +48,7 @@
 /** Adds the GPXPoint objects contained in another given array to the end of the point array.
  @param array An array of GPXPoint objects to add to the end of the point array.
  */
-- (void)addPoints:(NSArray *)array;
+- (void)addPoints:(NSArray<GPXPoint *> *)array;
 
 
 /// ---------------------------------

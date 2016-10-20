@@ -52,7 +52,7 @@
 @property (strong, nonatomic) NSString *source;
 
 /** Link to additional information about the waypoint. */
-@property (strong, nonatomic) NSArray *links;
+@property (strong, nonatomic) NSArray<GPXLink *> *links;
 
 /** Text of GPS symbol name. For interchange with other programs, use the exact spelling of the symbol as displayed on the GPS. 
     If the GPS abbreviates words, spell them out. */
@@ -127,7 +127,7 @@
 /** Adds the GPXLink objects contained in another given array to the end of the link array.
  @param array An array of GPXLink objects to add to the end of the link array.
  */
-- (void)addLinks:(NSArray *)array;
+- (void)addLinks:(NSArray<GPXLink *> *)array;
 
 
 /// ---------------------------------

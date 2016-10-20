@@ -10,6 +10,7 @@
 
 @class GPXRoot;
 
+
 /** Instances of this class parse GPX documents.
  */
 @interface GPXParser : NSObject
