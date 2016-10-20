@@ -26,3 +26,9 @@
 #import <GPX/GPXPoint.h>
 #import <GPX/GPXPointSegment.h>
 #import <GPX/GPXBounds.h>
+
+//! Project version number for GPX.
+FOUNDATION_EXPORT double GPXVersionNumber;
+
+//! Project version string for GPX.
+FOUNDATION_EXPORT const unsigned char GPXVersionString[];

@@ -169,4 +169,21 @@
  */
 - (void)removeTrack:(GPXTrack *)track;
 
+/**
+ Saves the GPX to file, device, or named socket at the specified path..
+ 
+ @param path  The path to the file, device, or named socket to access.
+ @param error If an error occurs, upon return contains an NSError object that describes the problem. Pass NULL if you do not want error information.
+ */
+- (void)saveToPath:(NSString *)path error:(NSError **)error;
+
+
+/**
+ Saves the GPX to file, device, or named socket at the specified URL.
+ 
+ @param url   The URL of the file, device, or named socket to access.
+ @param error If an error occurs, upon return contains an NSError object that describes the problem. Pass NULL if you do not want error information.
+ */
+- (void)saveToURL:(NSURL *)url error:(NSError **)error;
+
 @end

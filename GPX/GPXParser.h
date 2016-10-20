@@ -6,8 +6,9 @@
 //  Copyright (c) 2012 NextBusinessSystem Co., Ltd. All rights reserved.
 //
 
-@class GPXRoot;
+#import <Foundation/Foundation.h>
 
+@class GPXRoot;
 
 /** Instances of this class parse GPX documents.
  */

@@ -184,7 +184,7 @@
 
 - (void)setFix:(NSInteger)fix
 {
-    _fixValue = [GPXType valueForFix:fix];
+    _fixValue = [GPXType valueForFix:(GPXFix)fix];
 }
 
 - (NSInteger)satellites
@@ -288,7 +288,7 @@
         [attribute appendFormat:@" lon=\"%@\"", _longitudeValue];
     }
     
-    [gpx appendString:[NSString stringWithFormat:@"%@%<%@%@>\r\n"
+    [gpx appendString:[NSString stringWithFormat:@"%@<%@%@>\r\n"
                        , [self indentForIndentationLevel:indentationLevel]
                        , [[self class] tagName]
                        , attribute

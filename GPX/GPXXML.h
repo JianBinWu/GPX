@@ -27,6 +27,7 @@
 //  THE SOFTWARE.
 // ================================================================================================
 
+#import <Foundation/Foundation.h>
 
 #define MAX_ELEMENTS 100
 #define MAX_ATTRIBUTES 100

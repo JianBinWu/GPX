@@ -203,7 +203,17 @@
     }
 }
 
+- (void)saveToPath:(NSString *)path error:(NSError **)error {
+    [self saveToURL:[NSURL URLWithString:path] error:error];
+}
 
+- (void)saveToURL:(NSURL *)url error:(NSError **)error {
+    NSFileHandle *handler = [NSFileHandle fileHandleForWritingToURL:url error:error];
+    if (!error) {
+        [handler writeData:[self.gpx dataUsingEncoding:NSUTF8StringEncoding]];
+        [handler closeFile];
+    }
+}
 
 #pragma mark - Tag
 
@@ -229,7 +239,7 @@
     }
     
     [gpx appendString:@"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n"];
-    [gpx appendString:[NSString stringWithFormat:@"%@%<%@%@>\r\n"
+    [gpx appendString:[NSString stringWithFormat:@"%@<%@%@>\r\n"
                        , [self indentForIndentationLevel:indentationLevel]
                        , [[self class] tagName]
                        , attribute

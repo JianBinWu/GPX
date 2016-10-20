@@ -7,14 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		131D1C381532A2AF007479F1 /* mystic_basin_trail.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 131D1C371532A2AF007479F1 /* mystic_basin_trail.gpx */; };
 		13D46EB4152ECF2400C9A168 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D46EB3152ECF2400C9A168 /* Foundation.framework */; };
-		13D46EBA152ECF2400C9A168 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13D46EB8152ECF2400C9A168 /* InfoPlist.strings */; };
-		13D46EC3152ECF2400C9A168 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D46EC2152ECF2400C9A168 /* SenTestingKit.framework */; };
-		13D46EC6152ECF2400C9A168 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D46EB3152ECF2400C9A168 /* Foundation.framework */; };
-		13D46ECB152ECF2400C9A168 /* GPX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D46EB0152ECF2400C9A168 /* GPX.framework */; };
-		13D46ED2152ECF2400C9A168 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13D46ED0152ECF2400C9A168 /* InfoPlist.strings */; };
-		13D46ED5152ECF2400C9A168 /* GPXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46ED4152ECF2400C9A168 /* GPXTests.m */; };
 		13D46F13152ED11700C9A168 /* GPX.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EE5152ED11700C9A168 /* GPX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13D46F14152ED11700C9A168 /* GPXAuthor.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EE6152ED11700C9A168 /* GPXAuthor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13D46F15152ED11700C9A168 /* GPXAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EE7152ED11700C9A168 /* GPXAuthor.m */; };
@@ -26,7 +19,7 @@
 		13D46F1B152ED11700C9A168 /* GPXCopyright.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EED152ED11700C9A168 /* GPXCopyright.m */; };
 		13D46F1C152ED11700C9A168 /* GPXElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EEE152ED11700C9A168 /* GPXElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13D46F1D152ED11700C9A168 /* GPXElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EEF152ED11700C9A168 /* GPXElement.m */; };
-		13D46F1E152ED11700C9A168 /* GPXElementSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EF0152ED11700C9A168 /* GPXElementSubclass.h */; settings = {ATTRIBUTES = (); }; };
+		13D46F1E152ED11700C9A168 /* GPXElementSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EF0152ED11700C9A168 /* GPXElementSubclass.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		13D46F1F152ED11700C9A168 /* GPXEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EF1152ED11700C9A168 /* GPXEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13D46F20152ED11700C9A168 /* GPXEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EF2152ED11700C9A168 /* GPXEmail.m */; };
 		13D46F21152ED11700C9A168 /* GPXExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EF3152ED11700C9A168 /* GPXExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -59,41 +52,85 @@
 		13D46F3C152ED11700C9A168 /* GPXType.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46F0E152ED11700C9A168 /* GPXType.m */; };
 		13D46F3D152ED11700C9A168 /* GPXWaypoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46F0F152ED11700C9A168 /* GPXWaypoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13D46F3E152ED11700C9A168 /* GPXWaypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46F10152ED11700C9A168 /* GPXWaypoint.m */; };
-		13D46F3F152ED11700C9A168 /* GPXXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46F11152ED11700C9A168 /* GPXXML.h */; settings = {ATTRIBUTES = (); }; };
+		13D46F3F152ED11700C9A168 /* GPXXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46F11152ED11700C9A168 /* GPXXML.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		13D46F40152ED11700C9A168 /* GPXXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46F12152ED11700C9A168 /* GPXXML.m */; };
 		13D46F43152ED24900C9A168 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D46F42152ED24900C9A168 /* UIKit.framework */; };
+		9C88BC671DB8D4AE00DC9E61 /* GPXParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EF9152ED11700C9A168 /* GPXParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC681DB8D4AE00DC9E61 /* GPXXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46F11152ED11700C9A168 /* GPXXML.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9C88BC691DB8D4AE00DC9E61 /* GPXConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EEA152ED11700C9A168 /* GPXConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC6A1DB8D4AE00DC9E61 /* GPXType.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46F0D152ED11700C9A168 /* GPXType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC6B1DB8D4AE00DC9E61 /* GPXElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EEE152ED11700C9A168 /* GPXElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC6C1DB8D4AE00DC9E61 /* GPXElementSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EF0152ED11700C9A168 /* GPXElementSubclass.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9C88BC6D1DB8D4AE00DC9E61 /* GPXRoot.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46F01152ED11700C9A168 /* GPXRoot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC6E1DB8D4AE00DC9E61 /* GPXMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EF7152ED11700C9A168 /* GPXMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC6F1DB8D4AE00DC9E61 /* GPXWaypoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46F0F152ED11700C9A168 /* GPXWaypoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC701DB8D4AE00DC9E61 /* GPXRoutePoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46F05152ED11700C9A168 /* GPXRoutePoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC711DB8D4AE00DC9E61 /* GPXTrackPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46F09152ED11700C9A168 /* GPXTrackPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC721DB8D4AE00DC9E61 /* GPXRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46F03152ED11700C9A168 /* GPXRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC731DB8D4AE00DC9E61 /* GPXTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46F07152ED11700C9A168 /* GPXTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC741DB8D4AE00DC9E61 /* GPXExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EF3152ED11700C9A168 /* GPXExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC751DB8D4AE00DC9E61 /* GPXTrackSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46F0B152ED11700C9A168 /* GPXTrackSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC761DB8D4AE00DC9E61 /* GPXCopyright.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EEC152ED11700C9A168 /* GPXCopyright.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC771DB8D4AE00DC9E61 /* GPXLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EF5152ED11700C9A168 /* GPXLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC781DB8D4AE00DC9E61 /* GPXEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EF1152ED11700C9A168 /* GPXEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC791DB8D4AE00DC9E61 /* GPXPerson.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EFB152ED11700C9A168 /* GPXPerson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC7A1DB8D4AE00DC9E61 /* GPXAuthor.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EE6152ED11700C9A168 /* GPXAuthor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC7B1DB8D4AE00DC9E61 /* GPXPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EFD152ED11700C9A168 /* GPXPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC7C1DB8D4AE00DC9E61 /* GPXPointSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EFF152ED11700C9A168 /* GPXPointSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC7D1DB8D4AE00DC9E61 /* GPXBounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EE8152ED11700C9A168 /* GPXBounds.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC7E1DB8D4F500DC9E61 /* GPXParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EFA152ED11700C9A168 /* GPXParser.m */; };
+		9C88BC7F1DB8D4F500DC9E61 /* GPXXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46F12152ED11700C9A168 /* GPXXML.m */; };
+		9C88BC801DB8D4F500DC9E61 /* GPXConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EEB152ED11700C9A168 /* GPXConst.m */; };
+		9C88BC811DB8D4F500DC9E61 /* GPXType.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46F0E152ED11700C9A168 /* GPXType.m */; };
+		9C88BC821DB8D4F500DC9E61 /* GPXElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EEF152ED11700C9A168 /* GPXElement.m */; };
+		9C88BC831DB8D4F500DC9E61 /* GPXRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46F02152ED11700C9A168 /* GPXRoot.m */; };
+		9C88BC841DB8D4F500DC9E61 /* GPXMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EF8152ED11700C9A168 /* GPXMetadata.m */; };
+		9C88BC851DB8D4F500DC9E61 /* GPXWaypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46F10152ED11700C9A168 /* GPXWaypoint.m */; };
+		9C88BC861DB8D4F500DC9E61 /* GPXRoutePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46F06152ED11700C9A168 /* GPXRoutePoint.m */; };
+		9C88BC871DB8D4F500DC9E61 /* GPXTrackPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46F0A152ED11700C9A168 /* GPXTrackPoint.m */; };
+		9C88BC881DB8D4F500DC9E61 /* GPXRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46F04152ED11700C9A168 /* GPXRoute.m */; };
+		9C88BC891DB8D4F500DC9E61 /* GPXTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46F08152ED11700C9A168 /* GPXTrack.m */; };
+		9C88BC8A1DB8D4F500DC9E61 /* GPXExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EF4152ED11700C9A168 /* GPXExtensions.m */; };
+		9C88BC8B1DB8D4F500DC9E61 /* GPXTrackSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46F0C152ED11700C9A168 /* GPXTrackSegment.m */; };
+		9C88BC8C1DB8D4F500DC9E61 /* GPXCopyright.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EED152ED11700C9A168 /* GPXCopyright.m */; };
+		9C88BC8D1DB8D4F500DC9E61 /* GPXLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EF6152ED11700C9A168 /* GPXLink.m */; };
+		9C88BC8E1DB8D4F500DC9E61 /* GPXEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EF2152ED11700C9A168 /* GPXEmail.m */; };
+		9C88BC8F1DB8D4F500DC9E61 /* GPXPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EFC152ED11700C9A168 /* GPXPerson.m */; };
+		9C88BC901DB8D4F500DC9E61 /* GPXAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EE7152ED11700C9A168 /* GPXAuthor.m */; };
+		9C88BC911DB8D4F500DC9E61 /* GPXPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EFE152ED11700C9A168 /* GPXPoint.m */; };
+		9C88BC921DB8D4F500DC9E61 /* GPXPointSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46F00152ED11700C9A168 /* GPXPointSegment.m */; };
+		9C88BC931DB8D4F500DC9E61 /* GPXBounds.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D46EE9152ED11700C9A168 /* GPXBounds.m */; };
+		9C88BC941DB8D6B400DC9E61 /* GPX.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D46EE5152ED11700C9A168 /* GPX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C88BC9C1DB8D77000DC9E61 /* GPXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C88BC9B1DB8D77000DC9E61 /* GPXTests.m */; };
+		9C88BCA61DB8E5C700DC9E61 /* mystic_basin_trail.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9C88BCA51DB8E5C700DC9E61 /* mystic_basin_trail.gpx */; };
+		9C88BCB61DB8E64D00DC9E61 /* GPXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C88BC9B1DB8D77000DC9E61 /* GPXTests.m */; };
+		9C88BCB71DB8E65000DC9E61 /* mystic_basin_trail.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 9C88BCA51DB8E5C700DC9E61 /* mystic_basin_trail.gpx */; };
+		9C88BCB81DB8E76600DC9E61 /* GPX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D46EB0152ECF2400C9A168 /* GPX.framework */; };
+		9C88BCB91DB8E76B00DC9E61 /* GPX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C88BC5E1DB8D1A800DC9E61 /* GPX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		13D46EC7152ECF2400C9A168 /* PBXContainerItemProxy */ = {
+		9C88BCA11DB8D90700DC9E61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 13D46EA3152ECF2400C9A168 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13D46EAF152ECF2400C9A168;
-			remoteInfo = GPX;
+			remoteInfo = "GPX-iOS";
 		};
-		13D46EC9152ECF2400C9A168 /* PBXContainerItemProxy */ = {
+		9C88BCB11DB8E5EF00DC9E61 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 13D46EA3152ECF2400C9A168 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 13D46EAF152ECF2400C9A168;
-			remoteInfo = GPX;
+			remoteGlobalIDString = 9C88BC5D1DB8D1A800DC9E61;
+			remoteInfo = "GPX-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		131D1C371532A2AF007479F1 /* mystic_basin_trail.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mystic_basin_trail.gpx; sourceTree = "<group>"; };
 		13D46EB0152ECF2400C9A168 /* GPX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = GPX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D46EB3152ECF2400C9A168 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		13D46EB7152ECF2400C9A168 /* GPX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPX-Info.plist"; sourceTree = "<group>"; };
-		13D46EB9152ECF2400C9A168 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		13D46EBB152ECF2400C9A168 /* GPX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPX-Prefix.pch"; sourceTree = "<group>"; };
-		13D46EC1152ECF2400C9A168 /* GPXTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPXTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13D46EB7152ECF2400C9A168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13D46EC2152ECF2400C9A168 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		13D46ECF152ECF2400C9A168 /* GPXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPXTests-Info.plist"; sourceTree = "<group>"; };
-		13D46ED1152ECF2400C9A168 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		13D46ED3152ECF2400C9A168 /* GPXTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPXTests.h; sourceTree = "<group>"; };
-		13D46ED4152ECF2400C9A168 /* GPXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPXTests.m; sourceTree = "<group>"; };
 		13D46EE5152ED11700C9A168 /* GPX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPX.h; sourceTree = "<group>"; };
 		13D46EE6152ED11700C9A168 /* GPXAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXAuthor.h; sourceTree = "<group>"; };
 		13D46EE7152ED11700C9A168 /* GPXAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXAuthor.m; sourceTree = "<group>"; };
@@ -141,6 +178,16 @@
 		13D46F11152ED11700C9A168 /* GPXXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXXML.h; sourceTree = "<group>"; };
 		13D46F12152ED11700C9A168 /* GPXXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXXML.m; sourceTree = "<group>"; };
 		13D46F42152ED24900C9A168 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9C88BC5E1DB8D1A800DC9E61 /* GPX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C88BC991DB8D77000DC9E61 /* GPX-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPX-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C88BC9B1DB8D77000DC9E61 /* GPXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPXTests.m; sourceTree = "<group>"; };
+		9C88BC9D1DB8D77000DC9E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C88BCA51DB8E5C700DC9E61 /* mystic_basin_trail.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mystic_basin_trail.gpx; sourceTree = "<group>"; };
+		9C88BCAB1DB8E5EF00DC9E61 /* GPX-macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPX-macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C88BCBB1DB8EAC000DC9E61 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9C88BCBC1DB8EAC000DC9E61 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9C88BCBD1DB8EB5900DC9E61 /* TBXML-LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = "TBXML-LICENSE"; sourceTree = "<group>"; };
+		9C88BCBE1DB8EB9700DC9E61 /* GPX.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = GPX.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,13 +200,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13D46EBD152ECF2400C9A168 /* Frameworks */ = {
+		9C88BC5A1DB8D1A800DC9E61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13D46EC3152ECF2400C9A168 /* SenTestingKit.framework in Frameworks */,
-				13D46EC6152ECF2400C9A168 /* Foundation.framework in Frameworks */,
-				13D46ECB152ECF2400C9A168 /* GPX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C88BC961DB8D77000DC9E61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C88BCB81DB8E76600DC9E61 /* GPX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C88BCA81DB8E5EF00DC9E61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C88BCB91DB8E76B00DC9E61 /* GPX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,8 +229,10 @@
 		13D46EA1152ECF2400C9A168 = {
 			isa = PBXGroup;
 			children = (
+				9C88BCBA1DB8EAB000DC9E61 /* Metadata */,
 				13D46EB5152ECF2400C9A168 /* GPX */,
-				13D46ECD152ECF2400C9A168 /* GPXTests */,
+				9C88BC661DB8D21400DC9E61 /* Framework */,
+				9C88BC9A1DB8D77000DC9E61 /* Tests */,
 				13D46EB2152ECF2400C9A168 /* Frameworks */,
 				13D46EB1152ECF2400C9A168 /* Products */,
 			);
@@ -180,7 +242,9 @@
 			isa = PBXGroup;
 			children = (
 				13D46EB0152ECF2400C9A168 /* GPX.framework */,
-				13D46EC1152ECF2400C9A168 /* GPXTests.octest */,
+				9C88BC5E1DB8D1A800DC9E61 /* GPX.framework */,
+				9C88BC991DB8D77000DC9E61 /* GPX-iOS-Tests.xctest */,
+				9C88BCAB1DB8E5EF00DC9E61 /* GPX-macOS-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,7 +262,6 @@
 		13D46EB5152ECF2400C9A168 /* GPX */ = {
 			isa = PBXGroup;
 			children = (
-				13D46EE5152ED11700C9A168 /* GPX.h */,
 				13D46EF9152ED11700C9A168 /* GPXParser.h */,
 				13D46EFA152ED11700C9A168 /* GPXParser.m */,
 				13D46F11152ED11700C9A168 /* GPXXML.h */,
@@ -208,39 +271,8 @@
 				13D46F0D152ED11700C9A168 /* GPXType.h */,
 				13D46F0E152ED11700C9A168 /* GPXType.m */,
 				13D46F41152ED13F00C9A168 /* Element */,
-				13D46EB6152ECF2400C9A168 /* Supporting Files */,
 			);
 			path = GPX;
-			sourceTree = "<group>";
-		};
-		13D46EB6152ECF2400C9A168 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				13D46EB7152ECF2400C9A168 /* GPX-Info.plist */,
-				13D46EB8152ECF2400C9A168 /* InfoPlist.strings */,
-				13D46EBB152ECF2400C9A168 /* GPX-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		13D46ECD152ECF2400C9A168 /* GPXTests */ = {
-			isa = PBXGroup;
-			children = (
-				13D46ED3152ECF2400C9A168 /* GPXTests.h */,
-				13D46ED4152ECF2400C9A168 /* GPXTests.m */,
-				131D1C371532A2AF007479F1 /* mystic_basin_trail.gpx */,
-				13D46ECE152ECF2400C9A168 /* Supporting Files */,
-			);
-			path = GPXTests;
-			sourceTree = "<group>";
-		};
-		13D46ECE152ECF2400C9A168 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				13D46ECF152ECF2400C9A168 /* GPXTests-Info.plist */,
-				13D46ED0152ECF2400C9A168 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		13D46F41152ED13F00C9A168 /* Element */ = {
@@ -287,6 +319,36 @@
 			name = Element;
 			sourceTree = "<group>";
 		};
+		9C88BC661DB8D21400DC9E61 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				13D46EE5152ED11700C9A168 /* GPX.h */,
+				13D46EB7152ECF2400C9A168 /* Info.plist */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		9C88BC9A1DB8D77000DC9E61 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9C88BC9B1DB8D77000DC9E61 /* GPXTests.m */,
+				9C88BC9D1DB8D77000DC9E61 /* Info.plist */,
+				9C88BCA51DB8E5C700DC9E61 /* mystic_basin_trail.gpx */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		9C88BCBA1DB8EAB000DC9E61 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				9C88BCBB1DB8EAC000DC9E61 /* LICENSE */,
+				9C88BCBC1DB8EAC000DC9E61 /* README.md */,
+				9C88BCBD1DB8EB5900DC9E61 /* TBXML-LICENSE */,
+				9C88BCBE1DB8EB9700DC9E61 /* GPX.podspec */,
+			);
+			name = Metadata;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -321,12 +383,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C88BC5B1DB8D1A800DC9E61 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C88BC941DB8D6B400DC9E61 /* GPX.h in Headers */,
+				9C88BC671DB8D4AE00DC9E61 /* GPXParser.h in Headers */,
+				9C88BC691DB8D4AE00DC9E61 /* GPXConst.h in Headers */,
+				9C88BC6A1DB8D4AE00DC9E61 /* GPXType.h in Headers */,
+				9C88BC6B1DB8D4AE00DC9E61 /* GPXElement.h in Headers */,
+				9C88BC6D1DB8D4AE00DC9E61 /* GPXRoot.h in Headers */,
+				9C88BC6E1DB8D4AE00DC9E61 /* GPXMetadata.h in Headers */,
+				9C88BC6F1DB8D4AE00DC9E61 /* GPXWaypoint.h in Headers */,
+				9C88BC701DB8D4AE00DC9E61 /* GPXRoutePoint.h in Headers */,
+				9C88BC711DB8D4AE00DC9E61 /* GPXTrackPoint.h in Headers */,
+				9C88BC721DB8D4AE00DC9E61 /* GPXRoute.h in Headers */,
+				9C88BC731DB8D4AE00DC9E61 /* GPXTrack.h in Headers */,
+				9C88BC741DB8D4AE00DC9E61 /* GPXExtensions.h in Headers */,
+				9C88BC751DB8D4AE00DC9E61 /* GPXTrackSegment.h in Headers */,
+				9C88BC761DB8D4AE00DC9E61 /* GPXCopyright.h in Headers */,
+				9C88BC771DB8D4AE00DC9E61 /* GPXLink.h in Headers */,
+				9C88BC781DB8D4AE00DC9E61 /* GPXEmail.h in Headers */,
+				9C88BC791DB8D4AE00DC9E61 /* GPXPerson.h in Headers */,
+				9C88BC7A1DB8D4AE00DC9E61 /* GPXAuthor.h in Headers */,
+				9C88BC7B1DB8D4AE00DC9E61 /* GPXPoint.h in Headers */,
+				9C88BC7C1DB8D4AE00DC9E61 /* GPXPointSegment.h in Headers */,
+				9C88BC7D1DB8D4AE00DC9E61 /* GPXBounds.h in Headers */,
+				9C88BC681DB8D4AE00DC9E61 /* GPXXML.h in Headers */,
+				9C88BC6C1DB8D4AE00DC9E61 /* GPXElementSubclass.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		13D46EAF152ECF2400C9A168 /* GPX */ = {
+		13D46EAF152ECF2400C9A168 /* GPX-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13D46ED8152ECF2400C9A168 /* Build configuration list for PBXNativeTarget "GPX" */;
+			buildConfigurationList = 13D46ED8152ECF2400C9A168 /* Build configuration list for PBXNativeTarget "GPX-iOS" */;
 			buildPhases = (
 				13D46EA8152ECF2400C9A168 /* ShellScript */,
 				13D46EA9152ECF2400C9A168 /* Sources */,
@@ -340,30 +433,64 @@
 			);
 			dependencies = (
 			);
-			name = GPX;
+			name = "GPX-iOS";
 			productName = GPX;
 			productReference = 13D46EB0152ECF2400C9A168 /* GPX.framework */;
 			productType = "com.apple.product-type.framework.static";
 		};
-		13D46EC0152ECF2400C9A168 /* GPXTests */ = {
+		9C88BC5D1DB8D1A800DC9E61 /* GPX-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13D46EDB152ECF2400C9A168 /* Build configuration list for PBXNativeTarget "GPXTests" */;
+			buildConfigurationList = 9C88BC631DB8D1A800DC9E61 /* Build configuration list for PBXNativeTarget "GPX-macOS" */;
 			buildPhases = (
-				13D46EBC152ECF2400C9A168 /* Sources */,
-				13D46EBD152ECF2400C9A168 /* Frameworks */,
-				13D46EBE152ECF2400C9A168 /* Resources */,
-				13D46EBF152ECF2400C9A168 /* ShellScript */,
+				9C88BC591DB8D1A800DC9E61 /* Sources */,
+				9C88BC5A1DB8D1A800DC9E61 /* Frameworks */,
+				9C88BC5B1DB8D1A800DC9E61 /* Headers */,
+				9C88BC5C1DB8D1A800DC9E61 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				13D46EC8152ECF2400C9A168 /* PBXTargetDependency */,
-				13D46ECA152ECF2400C9A168 /* PBXTargetDependency */,
 			);
-			name = GPXTests;
+			name = "GPX-macOS";
+			productName = "GPX-macOS";
+			productReference = 9C88BC5E1DB8D1A800DC9E61 /* GPX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9C88BC981DB8D77000DC9E61 /* GPX-iOS-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C88BC9E1DB8D77000DC9E61 /* Build configuration list for PBXNativeTarget "GPX-iOS-Tests" */;
+			buildPhases = (
+				9C88BC951DB8D77000DC9E61 /* Sources */,
+				9C88BC961DB8D77000DC9E61 /* Frameworks */,
+				9C88BC971DB8D77000DC9E61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C88BCA21DB8D90700DC9E61 /* PBXTargetDependency */,
+			);
+			name = "GPX-iOS-Tests";
+			productName = "GPX-iOS-Tests";
+			productReference = 9C88BC991DB8D77000DC9E61 /* GPX-iOS-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C88BCAA1DB8E5EF00DC9E61 /* GPX-macOS-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C88BCB31DB8E5EF00DC9E61 /* Build configuration list for PBXNativeTarget "GPX-macOS-Tests" */;
+			buildPhases = (
+				9C88BCA71DB8E5EF00DC9E61 /* Sources */,
+				9C88BCA81DB8E5EF00DC9E61 /* Frameworks */,
+				9C88BCA91DB8E5EF00DC9E61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C88BCB21DB8E5EF00DC9E61 /* PBXTargetDependency */,
+			);
+			name = "GPX-macOS-Tests";
 			productName = GPXTests;
-			productReference = 13D46EC1152ECF2400C9A168 /* GPXTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 9C88BCAB1DB8E5EF00DC9E61 /* GPX-macOS-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -371,7 +498,24 @@
 		13D46EA3152ECF2400C9A168 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					9C88BC5D1DB8D1A800DC9E61 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Q95SQ3447E;
+						ProvisioningStyle = Automatic;
+					};
+					9C88BC981DB8D77000DC9E61 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Q95SQ3447E;
+						ProvisioningStyle = Automatic;
+					};
+					9C88BCAA1DB8E5EF00DC9E61 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Q95SQ3447E;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 13D46EA6152ECF2400C9A168 /* Build configuration list for PBXProject "GPX" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -385,8 +529,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13D46EAF152ECF2400C9A168 /* GPX */,
-				13D46EC0152ECF2400C9A168 /* GPXTests */,
+				13D46EAF152ECF2400C9A168 /* GPX-iOS */,
+				9C88BC981DB8D77000DC9E61 /* GPX-iOS-Tests */,
+				9C88BC5D1DB8D1A800DC9E61 /* GPX-macOS */,
+				9C88BCAA1DB8E5EF00DC9E61 /* GPX-macOS-Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -396,16 +542,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13D46EBA152ECF2400C9A168 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13D46EBE152ECF2400C9A168 /* Resources */ = {
+		9C88BC5C1DB8D1A800DC9E61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13D46ED2152ECF2400C9A168 /* InfoPlist.strings in Resources */,
-				131D1C381532A2AF007479F1 /* mystic_basin_trail.gpx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C88BC971DB8D77000DC9E61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C88BCA61DB8E5C700DC9E61 /* mystic_basin_trail.gpx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C88BCA91DB8E5EF00DC9E61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C88BCB71DB8E65000DC9E61 /* mystic_basin_trail.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,19 +610,6 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
 		};
-		13D46EBF152ECF2400C9A168 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -496,58 +642,87 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13D46EBC152ECF2400C9A168 /* Sources */ = {
+		9C88BC591DB8D1A800DC9E61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13D46ED5152ECF2400C9A168 /* GPXTests.m in Sources */,
+				9C88BC7E1DB8D4F500DC9E61 /* GPXParser.m in Sources */,
+				9C88BC7F1DB8D4F500DC9E61 /* GPXXML.m in Sources */,
+				9C88BC801DB8D4F500DC9E61 /* GPXConst.m in Sources */,
+				9C88BC811DB8D4F500DC9E61 /* GPXType.m in Sources */,
+				9C88BC821DB8D4F500DC9E61 /* GPXElement.m in Sources */,
+				9C88BC831DB8D4F500DC9E61 /* GPXRoot.m in Sources */,
+				9C88BC841DB8D4F500DC9E61 /* GPXMetadata.m in Sources */,
+				9C88BC851DB8D4F500DC9E61 /* GPXWaypoint.m in Sources */,
+				9C88BC861DB8D4F500DC9E61 /* GPXRoutePoint.m in Sources */,
+				9C88BC871DB8D4F500DC9E61 /* GPXTrackPoint.m in Sources */,
+				9C88BC881DB8D4F500DC9E61 /* GPXRoute.m in Sources */,
+				9C88BC891DB8D4F500DC9E61 /* GPXTrack.m in Sources */,
+				9C88BC8A1DB8D4F500DC9E61 /* GPXExtensions.m in Sources */,
+				9C88BC8B1DB8D4F500DC9E61 /* GPXTrackSegment.m in Sources */,
+				9C88BC8C1DB8D4F500DC9E61 /* GPXCopyright.m in Sources */,
+				9C88BC8D1DB8D4F500DC9E61 /* GPXLink.m in Sources */,
+				9C88BC8E1DB8D4F500DC9E61 /* GPXEmail.m in Sources */,
+				9C88BC8F1DB8D4F500DC9E61 /* GPXPerson.m in Sources */,
+				9C88BC901DB8D4F500DC9E61 /* GPXAuthor.m in Sources */,
+				9C88BC911DB8D4F500DC9E61 /* GPXPoint.m in Sources */,
+				9C88BC921DB8D4F500DC9E61 /* GPXPointSegment.m in Sources */,
+				9C88BC931DB8D4F500DC9E61 /* GPXBounds.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C88BC951DB8D77000DC9E61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C88BC9C1DB8D77000DC9E61 /* GPXTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C88BCA71DB8E5EF00DC9E61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C88BCB61DB8E64D00DC9E61 /* GPXTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		13D46EC8152ECF2400C9A168 /* PBXTargetDependency */ = {
+		9C88BCA21DB8D90700DC9E61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13D46EAF152ECF2400C9A168 /* GPX */;
-			targetProxy = 13D46EC7152ECF2400C9A168 /* PBXContainerItemProxy */;
+			target = 13D46EAF152ECF2400C9A168 /* GPX-iOS */;
+			targetProxy = 9C88BCA11DB8D90700DC9E61 /* PBXContainerItemProxy */;
 		};
-		13D46ECA152ECF2400C9A168 /* PBXTargetDependency */ = {
+		9C88BCB21DB8E5EF00DC9E61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13D46EAF152ECF2400C9A168 /* GPX */;
-			targetProxy = 13D46EC9152ECF2400C9A168 /* PBXContainerItemProxy */;
+			target = 9C88BC5D1DB8D1A800DC9E61 /* GPX-macOS */;
+			targetProxy = 9C88BCB11DB8E5EF00DC9E61 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		13D46EB8152ECF2400C9A168 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13D46EB9152ECF2400C9A168 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		13D46ED0152ECF2400C9A168 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13D46ED1152ECF2400C9A168 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		13D46ED6152ECF2400C9A168 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -555,10 +730,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -567,15 +746,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -584,17 +776,14 @@
 		13D46ED9152ECF2400C9A168 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GPX/GPX-Prefix.pch";
-				INFOPLIST_FILE = "GPX/GPX-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/GPX/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextbusinesssystem.GPX;
+				PRODUCT_NAME = GPX;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -603,49 +792,200 @@
 		13D46EDA152ECF2400C9A168 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GPX/GPX-Prefix.pch";
-				INFOPLIST_FILE = "GPX/GPX-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/GPX/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextbusinesssystem.GPX;
+				PRODUCT_NAME = GPX;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
 		};
-		13D46EDC152ECF2400C9A168 /* Debug */ = {
+		9C88BC641DB8D1A800DC9E61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GPX/GPX-Prefix.pch";
-				INFOPLIST_FILE = "GPXTests/GPXTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q95SQ3447E;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "$(SRCROOT)/Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextbusinesssystem.GPX;
+				PRODUCT_NAME = GPX;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		13D46EDD152ECF2400C9A168 /* Release */ = {
+		9C88BC651DB8D1A800DC9E61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GPX/GPX-Prefix.pch";
-				INFOPLIST_FILE = "GPXTests/GPXTests-Info.plist";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q95SQ3447E;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_VERSION = A;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "$(SRCROOT)/Framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextbusinesssystem.GPX;
+				PRODUCT_NAME = GPX;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9C88BC9F1DB8D77000DC9E61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Q95SQ3447E;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hulab.GPX-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9C88BCA01DB8D77000DC9E61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q95SQ3447E;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hulab.GPX-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9C88BCB41DB8E5EF00DC9E61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Q95SQ3447E;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hulab.GPXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9C88BCB51DB8E5EF00DC9E61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q95SQ3447E;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hulab.GPXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -661,7 +1001,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13D46ED8152ECF2400C9A168 /* Build configuration list for PBXNativeTarget "GPX" */ = {
+		13D46ED8152ECF2400C9A168 /* Build configuration list for PBXNativeTarget "GPX-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13D46ED9152ECF2400C9A168 /* Debug */,
@@ -670,11 +1010,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13D46EDB152ECF2400C9A168 /* Build configuration list for PBXNativeTarget "GPXTests" */ = {
+		9C88BC631DB8D1A800DC9E61 /* Build configuration list for PBXNativeTarget "GPX-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				13D46EDC152ECF2400C9A168 /* Debug */,
-				13D46EDD152ECF2400C9A168 /* Release */,
+				9C88BC641DB8D1A800DC9E61 /* Debug */,
+				9C88BC651DB8D1A800DC9E61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C88BC9E1DB8D77000DC9E61 /* Build configuration list for PBXNativeTarget "GPX-iOS-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C88BC9F1DB8D77000DC9E61 /* Debug */,
+				9C88BCA01DB8D77000DC9E61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C88BCB31DB8E5EF00DC9E61 /* Build configuration list for PBXNativeTarget "GPX-macOS-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C88BCB41DB8E5EF00DC9E61 /* Debug */,
+				9C88BCB51DB8E5EF00DC9E61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
