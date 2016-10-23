@@ -8,6 +8,7 @@
 
 #import "GPXType.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
 /** GPXElement is the root class of GPX element hierarchies. 
  */
@@ -20,7 +21,7 @@
 
 /** A parent GPXElement of the receiver.
  */
-@property (unsafe_unretained, nonatomic) GPXElement *parent;
+@property (unsafe_unretained, nonatomic, nullable) GPXElement *parent;
 
 
 /// ---------------------------------
@@ -33,3 +34,5 @@
 - (NSString *)gpx;
 
 @end
+
+NS_ASSUME_NONNULL_END

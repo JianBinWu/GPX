@@ -8,6 +8,10 @@
 
 #import "GPXPerson.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface GPXAuthor : GPXPerson
 
 @end
+
+NS_ASSUME_NONNULL_END

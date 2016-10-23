@@ -8,22 +8,21 @@
 
 #import "GPXElement.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
 /** An email address. Broken into two parts (id and domain) to help prevent email harvesting.
  */
 @interface GPXEmail : GPXElement
-
 
 /// ---------------------------------
 /// @name Accessing Properties
 /// ---------------------------------
 
 /** id half of email address (billgates2004) */
-@property (strong, nonatomic) NSString *emailID;
+@property (strong, nonatomic, nullable) NSString *emailID;
 
 /** domain half of email address (hotmail.com) */
-@property (strong, nonatomic) NSString *domain;
-
+@property (strong, nonatomic, nullable) NSString *domain;
 
 /// ---------------------------------
 /// @name Create Email
@@ -37,3 +36,5 @@
 + (GPXEmail *)emailWithID:(NSString *)emailID domain:(NSString *)domain;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -10,11 +10,7 @@
 #import "GPXConst.h"
 #import "GPXElementSubclass.h"
 
-
 @implementation GPXElement
-
-@synthesize parent = _parent;
-
 
 #pragma mark - Tag
 

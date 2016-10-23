@@ -8,12 +8,12 @@
 
 #import "GPXElement.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
 /** Information about the copyright holder and any license governing use of this file. 
     By linking to an appropriate license, you may place your data into the public domain or grant additional usage rights.
  */
 @interface GPXCopyright : GPXElement
-
 
 /// ---------------------------------
 /// @name Accessing Properties
@@ -23,11 +23,10 @@
 @property (strong, nonatomic) NSDate *year;
 
 /** Link to external file containing license text. */
-@property (strong, nonatomic) NSString *license;
+@property (strong, nonatomic, nullable) NSString *license;
 
 /** Copyright holder (TopoSoft, Inc.) */
-@property (strong, nonatomic) NSString *author;
-
+@property (strong, nonatomic, nullable) NSString *author;
 
 /// ---------------------------------
 /// @name Create Copyright
@@ -37,6 +36,8 @@
  @param author Copyright holder (TopoSoft, Inc.)
  @return A newly created copyright element.
  */
-+ (GPXCopyright *)copyroghtWithAuthor:(NSString *)author;
++ (GPXCopyright *)copyrightWithAuthor:(NSString *)author;
 
 @end
+
+NS_ASSUME_NONNULL_END

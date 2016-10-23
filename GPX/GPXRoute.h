@@ -8,46 +8,46 @@
 
 #import "GPXElement.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class GPXLink;
 @class GPXExtensions;
 @class GPXRoutePoint;
 
-
 /** rte represents route - an ordered list of waypoints representing a series of turn points leading to a destination.
  */
 @interface GPXRoute : GPXElement
-
 
 /// ---------------------------------
 /// @name Accessing Properties
 /// ---------------------------------
 
 /** GPS name of route. */
-@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic, nullable) NSString *name;
 
 /** GPS comment for route. */
-@property (strong, nonatomic) NSString *comment;
+@property (strong, nonatomic, nullable) NSString *comment;
 
 /** Text description of route for user. Not sent to GPS. */
-@property (strong, nonatomic) NSString *desc;
+@property (strong, nonatomic, nullable) NSString *desc;
 
 /** Source of data. Included to give user some idea of reliability and accuracy of data. */
-@property (strong, nonatomic) NSString *source;
+@property (strong, nonatomic, nullable) NSString *source;
 
 /** Links to external information about the route. */
-@property (strong, nonatomic, readonly) NSArray<GPXLink *> *links;
+@property (nonatomic, readonly) NSArray<GPXLink *> *links;
 
 /** GPS route number. */
 @property (nonatomic, assign) NSInteger number;
 
 /** Type (classification) of route. */
-@property (strong, nonatomic) NSString *type;
+@property (strong, nonatomic, nullable) NSString *type;
 
 /** You can add extend GPX by adding your own elements from another schema here. */
-@property (strong, nonatomic) GPXExtensions *extensions;
+@property (strong, nonatomic, nullable) GPXExtensions *extensions;
 
 /** A list of route points. */
-@property (strong, nonatomic, readonly) NSArray<GPXRoutePoint *> *routepoints;
+@property (nonatomic, readonly) NSArray<GPXRoutePoint *> *routepoints;
 
 
 /// ---------------------------------
@@ -123,3 +123,5 @@
 - (void)removeRoutepoint:(GPXRoutePoint *)routepoint;
 
 @end
+
+NS_ASSUME_NONNULL_END

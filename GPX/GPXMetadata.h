@@ -8,48 +8,50 @@
 
 #import "GPXElement.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class GPXAuthor;
 @class GPXCopyright;
 @class GPXLink;
 @class GPXBounds;
 @class GPXExtensions;
 
-
 /** Information about the GPX file, author, and copyright restrictions goes in the metadata section. 
     Providing rich, meaningful information about your GPX files allows others to search for and use your GPS data.
  */
 @interface GPXMetadata : GPXElement
-
 
 /// ---------------------------------
 /// @name Accessing Properties
 /// ---------------------------------
 
 /** The name of the GPX file. */
-@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic, nullable) NSString *name;
 
 /** A description of the contents of the GPX file. */
-@property (strong, nonatomic) NSString *desc;
+@property (strong, nonatomic, nullable) NSString *desc;
 
 /** The person or organization who created the GPX file. */
-@property (strong, nonatomic) GPXAuthor *author;
+@property (strong, nonatomic, nullable) GPXAuthor *author;
 
 /** Copyright and license information governing use of the file. */
-@property (strong, nonatomic) GPXCopyright *copyright;
+@property (strong, nonatomic, nullable) GPXCopyright *copyright;
 
 /** URLs associated with the location described in the file. */
-@property (strong, nonatomic) GPXLink *link;
+@property (strong, nonatomic, nullable) GPXLink *link;
 
 /** The creation date of the file. */
-@property (strong, nonatomic) NSDate *time;
+@property (strong, nonatomic, nullable) NSDate *time;
 
 /** Keywords associated with the file. Search engines or databases can use this information to classify the data. */
-@property (strong, nonatomic) NSString *keyword;
+@property (strong, nonatomic, nullable) NSString *keyword;
 
 /** Minimum and maximum coordinates which describe the extent of the coordinates in the file. */
-@property (strong, nonatomic) GPXBounds *bounds;
+@property (strong, nonatomic, nullable) GPXBounds *bounds;
 
 /** You can add extend GPX by adding your own elements from another schema here. */
-@property (strong, nonatomic) GPXExtensions *extensions;
+@property (strong, nonatomic, nullable) GPXExtensions *extensions;
 
 @end
+
+NS_ASSUME_NONNULL_END

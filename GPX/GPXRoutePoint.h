@@ -8,6 +8,8 @@
 
 #import "GPXWaypoint.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface GPXRoutePoint : GPXWaypoint
 
 /// ---------------------------------
@@ -22,3 +24,5 @@
 + (GPXRoutePoint *)routepointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
 
 @end
+
+NS_ASSUME_NONNULL_END

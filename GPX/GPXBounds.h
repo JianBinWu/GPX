@@ -8,11 +8,11 @@
 
 #import "GPXElement.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
 /** Two lat/lon pairs defining the extent of an element.
  */
 @interface GPXBounds : GPXElement
-
 
 /// ---------------------------------
 /// @name Accessing Properties
@@ -30,7 +30,6 @@
 /** The maximum longitude. */
 @property (nonatomic, assign) CGFloat maxLongitude;
 
-
 /// ---------------------------------
 /// @name Create Bounds
 /// ---------------------------------
@@ -45,3 +44,5 @@
 + (GPXBounds *)boundsWithMinLatitude:(CGFloat)minLatitude minLongitude:(CGFloat)minLongitude maxLatitude:(CGFloat)maxLatitude maxLongitude:(CGFloat)maxLongitude;
 
 @end
+
+NS_ASSUME_NONNULL_END

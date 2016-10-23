@@ -8,32 +8,32 @@
 
 #import "GPXElement.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class GPXExtensions;
 @class GPXLink;
 @class GPXTrackSegment;
 @class GPXTrackPoint;
 
-
 /** trk represents a track - an ordered list of points describing a path.
  */
 @interface GPXTrack : GPXElement
-
 
 /// ---------------------------------
 /// @name Accessing Properties
 /// ---------------------------------
 
 /** GPS name of track. */
-@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic, nullable) NSString *name;
 
 /** GPS comment for track. */
-@property (strong, nonatomic) NSString *comment;
+@property (strong, nonatomic, nullable) NSString *comment;
 
 /** User description of track. */
-@property (strong, nonatomic) NSString *desc;
+@property (strong, nonatomic, nullable) NSString *desc;
 
 /** Source of data. Included to give user some idea of reliability and accuracy of data. */
-@property (strong, nonatomic) NSString *source;
+@property (strong, nonatomic, nullable) NSString *source;
 
 /** Links to external information about track. */
 @property (strong, nonatomic, readonly) NSArray<GPXLink *> *links;
@@ -42,16 +42,15 @@
 @property (nonatomic, assign) NSInteger number;
 
 /** Type (classification) of track. */
-@property (strong, nonatomic) NSString *type;
+@property (strong, nonatomic, nullable) NSString *type;
 
 /** You can add extend GPX by adding your own elements from another schema here. */
-@property (strong, nonatomic) GPXExtensions *extensions;
+@property (strong, nonatomic, nullable) GPXExtensions *extensions;
 
 /** A Track Segment holds a list of Track Points which are logically connected in order.
     To represent a single GPS track where GPS reception was lost, or the GPS receiver was turned off, 
     start a new Track Segment for each continuous span of track data. */
-@property (strong, nonatomic, readonly) NSArray<GPXTrackSegment *> *tracksegments;
-
+@property (nonatomic, readonly) NSArray<GPXTrackSegment *> *tracksegments;
 
 /// ---------------------------------
 /// @name Creating Link
@@ -62,7 +61,6 @@
  @return A newly created link element.
  */
 - (GPXLink *)newLinkWithHref:(NSString *)href;
-
 
 /// ---------------------------------
 /// @name Adding Link
@@ -136,3 +134,5 @@
 - (GPXTrackPoint *)newTrackpointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
 
 @end
+
+NS_ASSUME_NONNULL_END

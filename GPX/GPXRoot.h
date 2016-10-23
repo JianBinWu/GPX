@@ -8,12 +8,13 @@
 
 #import "GPXElement.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class GPXMetadata;
 @class GPXWaypoint;
 @class GPXRoute;
 @class GPXTrack;
 @class GPXExtensions;
-
 
 /** GPX is the root element in the XML file.
     GPX documents contain a metadata header, followed by waypoints, routes, and tracks. 
@@ -21,35 +22,34 @@
  */
 @interface GPXRoot : GPXElement
 
-
 /// ---------------------------------
 /// @name Accessing Properties
 /// ---------------------------------
 
 /** The namespace for external XML schemas. */
-@property (strong, nonatomic, readonly) NSString *schema;
+@property (nonatomic, readonly, nullable) NSString *schema;
 
 /** You must include the version number in your GPX document. */
-@property (strong, nonatomic) NSString *version;
+@property (strong, nonatomic, nullable) NSString *version;
 
 /** You must include the name or URL of the software that created your GPX document. 
     This allows others to inform the creator of a GPX instance document that fails to validate. */
-@property (strong, nonatomic) NSString *creator;
+@property (strong, nonatomic, nullable) NSString *creator;
 
 /** Metadata about the file. */
-@property (strong, nonatomic) GPXMetadata *metadata;
+@property (strong, nonatomic, nullable) GPXMetadata *metadata;
 
 /** A list of waypoints. */
-@property (strong, nonatomic, readonly) NSArray<GPXWaypoint *> *waypoints;
+@property (nonatomic, readonly) NSArray<GPXWaypoint *> *waypoints;
 
 /** A list of routes. */
-@property (strong, nonatomic, readonly) NSArray<GPXRoute *> *routes;
+@property (nonatomic, readonly) NSArray<GPXRoute *> *routes;
 
 /** A list of tracks. */
-@property (strong, nonatomic, readonly) NSArray<GPXTrack *> *tracks;
+@property (nonatomic, readonly) NSArray<GPXTrack *> *tracks;
 
 /** You can add extend GPX by adding your own elements from another schema here. */
-@property (strong, nonatomic) GPXExtensions *extensions;
+@property (strong, nonatomic, nullable) GPXExtensions *extensions;
 
 
 /// ---------------------------------
@@ -192,3 +192,5 @@
 - (void)saveToURL:(NSURL *)url error:(NSError **)error;
 
 @end
+
+NS_ASSUME_NONNULL_END

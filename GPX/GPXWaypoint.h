@@ -8,14 +8,14 @@
 
 #import "GPXElement.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class GPXExtensions;
 @class GPXLink;
-
 
 /** wpt represents a waypoint, point of interest, or named feature on a map.
  */
 @interface GPXWaypoint : GPXElement
-
 
 /// ---------------------------------
 /// @name Accessing Properties
@@ -28,7 +28,7 @@
     Date and time in are in Univeral Coordinated Time (UTC), not local time! 
     Conforms to ISO 8601 specification for date/time representation.
     Fractional seconds are allowed for millisecond timing in tracklogs */
-@property (strong, nonatomic) NSDate *time;
+@property (strong, nonatomic, nullable) NSDate *time;
 
 /** Magnetic variation (in degrees) at the point */
 @property (nonatomic, assign) CGFloat magneticVariation;
@@ -39,27 +39,27 @@
 /** The GPS name of the waypoint. This field will be transferred to and from the GPS. 
     GPX does not place restrictions on the length of this field or the characters contained in it. 
     It is up to the receiving application to validate the field before sending it to the GPS. */
-@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic, nullable) NSString *name;
 
 /** GPS waypoint comment. Sent to GPS as comment. */
-@property (strong, nonatomic) NSString *comment;
+@property (strong, nonatomic, nullable) NSString *comment;
 
 /** A text description of the element. Holds additional information about the element intended for the user, not the GPS. */
-@property (strong, nonatomic) NSString *desc;
+@property (strong, nonatomic, nullable) NSString *desc;
 
 /** Source of data. Included to give user some idea of reliability and accuracy of data. 
     "Garmin eTrex", "USGS quad Boston North", e.g. */
-@property (strong, nonatomic) NSString *source;
+@property (strong, nonatomic, nullable) NSString *source;
 
 /** Link to additional information about the waypoint. */
 @property (strong, nonatomic) NSArray<GPXLink *> *links;
 
 /** Text of GPS symbol name. For interchange with other programs, use the exact spelling of the symbol as displayed on the GPS. 
     If the GPS abbreviates words, spell them out. */
-@property (strong, nonatomic) NSString *symbol;
+@property (strong, nonatomic, nullable) NSString *symbol;
 
 /** Type (classification) of the waypoint. */
-@property (strong, nonatomic) NSString *type;
+@property (strong, nonatomic, nullable) NSString *type;
 
 /** Type of GPX fix. */
 @property (nonatomic, assign) NSInteger fix;
@@ -83,7 +83,7 @@
 @property (nonatomic, assign) NSInteger DGPSid;
 
 /** You can add extend GPX by adding your own elements from another schema here. */
-@property (strong, nonatomic) GPXExtensions *extensions;
+@property (strong, nonatomic, nullable) GPXExtensions *extensions;
 
 /** The latitude of the point. Decimal degrees, WGS84 datum. */
 @property (nonatomic, assign) CGFloat latitude;
@@ -140,3 +140,5 @@
 - (void)removeLink:(GPXLink *)link;
 
 @end
+
+NS_ASSUME_NONNULL_END

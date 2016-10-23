@@ -8,20 +8,20 @@
 
 #import "GPXElement.h"
 
-@class GPXPoint;
+NS_ASSUME_NONNULL_BEGIN
 
+@class GPXPoint;
 
 /** An ordered sequence of points. (for polygons or polylines, e.g.)
  */
 @interface GPXPointSegment : GPXElement
-
 
 /// ---------------------------------
 /// @name Accessing Properties
 /// ---------------------------------
 
 /** Ordered list of geographic points. */
-@property (strong, nonatomic, readonly) NSArray<GPXPoint *> *points;
+@property (nonatomic, readonly) NSArray<GPXPoint *> *points;
 
 
 /// ---------------------------------
@@ -34,7 +34,6 @@
  @return A newly created point element.
  */
 - (GPXPoint *)newPointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
-
 
 /// ---------------------------------
 /// @name Adding Point
@@ -50,7 +49,6 @@
  */
 - (void)addPoints:(NSArray<GPXPoint *> *)array;
 
-
 /// ---------------------------------
 /// @name Removing Point
 /// ---------------------------------
@@ -61,3 +59,5 @@
 - (void)removePoint:(GPXPoint *)point;
 
 @end
+
+NS_ASSUME_NONNULL_END

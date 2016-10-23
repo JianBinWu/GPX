@@ -8,25 +8,24 @@
 
 #import "GPXElement.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
 /** A link to an external resource (Web page, digital photo, video clip, etc) with additional information.
  */
 @interface GPXLink : GPXElement
-
 
 /// ---------------------------------
 /// @name Accessing Properties
 /// ---------------------------------
 
 /** Text of hyperlink. */
-@property (strong, nonatomic) NSString *text;
+@property (strong, nonatomic, nullable) NSString *text;
 
 /** Mime type of content (image/jpeg) */
-@property (strong, nonatomic) NSString *mimetype;
+@property (strong, nonatomic, nullable) NSString *mimetype;
 
 /** URL of hyperlink. */
-@property (strong, nonatomic) NSString *href;
-
+@property (strong, nonatomic, nullable) NSString *href;
 
 /// ---------------------------------
 /// @name Create Link
@@ -39,3 +38,5 @@
 + (GPXLink *)linkWithHref:(NSString *)href;
 
 @end
+
+NS_ASSUME_NONNULL_END

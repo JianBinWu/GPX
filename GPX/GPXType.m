@@ -10,6 +10,16 @@
 
 @implementation GPXType
 
++ (NSDateFormatter *)dateFormatter {
+    static NSDateFormatter *formatter = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+    });
+    return formatter;
+}
+
 + (CGFloat)latitude:(NSString *)value
 {
     @try {
@@ -18,8 +28,7 @@
             return f;
         }
     }
-    @catch (NSException *exception) {
-    }
+    @catch (NSException *exception) {}
     
     return 0.f;
 }
@@ -160,8 +169,7 @@
 {
     NSDate *date;
     
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+    NSDateFormatter *formatter = [self dateFormatter];
     
     // dateTime（YYYY-MM-DDThh:mm:ssZ）
     formatter.dateFormat = @"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'";

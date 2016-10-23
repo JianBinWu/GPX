@@ -9,14 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-typedef enum {
+NS_ASSUME_NONNULL_BEGIN
+
+typedef NS_ENUM(NSInteger, GPXFix) {
     GPXFixNone = 0,
     GPXFix2D,
     GPXFix3D,
     GPXFixDgps,
-    GPXFixPps,
-} GPXFix;
-
+    GPXFixPps
+};
 
 /** Convinience methods for GPX Value types.
  */
@@ -141,7 +142,7 @@ typedef enum {
  @param value The string which to convert NSDate.
  @return A NSDate from a value.
  */
-+ (NSDate *)dateTime:(NSString *)value;
++ (nullable NSDate *)dateTime:(NSString *)value;
 
 /** Return the NSString object from a given NSDate.
  @param date The NSDate which to convert NSString.
@@ -162,3 +163,5 @@ typedef enum {
 + (NSString *)valueForNonNegativeInteger:(NSInteger)integer;
 
 @end
+
+NS_ASSUME_NONNULL_END
