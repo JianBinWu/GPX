@@ -14,7 +14,7 @@
     static NSDateFormatter *formatter = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        formatter = [[NSDateFormatter alloc] init];
         formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
     });
     return formatter;
@@ -221,8 +221,7 @@
 
 + (NSString *)valueForDateTime:(NSDate *)date
 {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+    NSDateFormatter *formatter = [self dateFormatter];
     
     // dateTime（YYYY-MM-DDThh:mm:ssZ）
     formatter.dateFormat = @"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'";
