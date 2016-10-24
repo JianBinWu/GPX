@@ -31,7 +31,7 @@
     return self;
 }
 
-+ (GPXCopyright *)copyroghtWithAuthor:(NSString *)author
++ (GPXCopyright *)copyrightWithAuthor:(NSString *)author
 {
     GPXCopyright *copyright = [GPXCopyright new];
     copyright.author = author;
