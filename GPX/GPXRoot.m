@@ -39,7 +39,7 @@
     self = [super init];
     if (self) {
         _version = @"1.1";
-        _creator = @"http://gpxframework.com";
+        _creator = @"http://gpx.framework.com";
         _waypoints = [NSMutableArray array];
         _routes = [NSMutableArray array];
         _tracks = [NSMutableArray array];
@@ -203,16 +203,24 @@
     }
 }
 
-- (void)saveToPath:(NSString *)path error:(NSError **)error {
-    [self saveToURL:[NSURL URLWithString:path] error:error];
+- (BOOL)saveToPath:(NSString *)path error:(NSError **)error {
+    NSFileManager *manager = [NSFileManager defaultManager];
+    if (![manager fileExistsAtPath:path]) {
+        [manager createFileAtPath:path contents:nil attributes:nil];
+    }
+    
+    return [self saveToURL:[NSURL URLWithString:path] error:error];
 }
 
-- (void)saveToURL:(NSURL *)url error:(NSError **)error {
+- (BOOL)saveToURL:(NSURL *)url error:(NSError **)error {
+    
     NSFileHandle *handler = [NSFileHandle fileHandleForWritingToURL:url error:error];
-    if (!error) {
-        [handler writeData:[self.gpx dataUsingEncoding:NSUTF8StringEncoding]];
-        [handler closeFile];
+    if (*error) {
+        return NO;
     }
+    [handler writeData:[self.gpx dataUsingEncoding:NSUTF8StringEncoding]];
+    [handler closeFile];
+    return YES;
 }
 
 #pragma mark - Tag

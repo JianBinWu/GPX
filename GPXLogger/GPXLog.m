@@ -6,6 +6,15 @@
 //
 //
 
+#import <GPX/GPXParser.h>
+#import <GPX/GPXRoot.h>
+#import <GPX/GPXMetadata.h>
+#import <GPX/GPXTrack.h>
+#import <GPX/GPXTrackSegment.h>
+#import <GPX/GPXTrackPoint.h>
+#import <GPX/GPXRoute.h>
+#import <GPX/GPXRoutePoint.h>
+
 #import "GPXLog.h"
 
 @interface GPXLog : NSObject
@@ -24,12 +33,12 @@
 
 @end
 
-void GPXSetLogFile(NSString *path) {
+void GPXSetPath(NSString *path) {
     GPXLog *log = [[GPXLog alloc] initWithPath:path];
     [GPXLog setSharedLog:log];
 }
 
-NSString *GPXGetLogFile() {
+NSString *GPXPath() {
     return [GPXLog sharedLog].path;
 }
 
@@ -111,6 +120,10 @@ static GPXLog *sharedLog = nil;
     if (self) {
         _path = path;
         _gpx = [GPXParser parseGPXAtPath:path];
+        
+        if (!_gpx) {
+            _gpx = [[GPXRoot alloc] init];
+        }
     }
     return self;
 }
@@ -127,7 +140,12 @@ static GPXLog *sharedLog = nil;
 }
 
 - (void)save {
-    [self.gpx saveToPath:self.path error:nil];
+    NSError *error = nil;
+    [self.gpx saveToPath:self.path error:&error];
+    
+    if (error) {
+        NSLog(@"%@", error);
+    }
 }
 
 @end

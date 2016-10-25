@@ -7,9 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GPX/GPX.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+@class GPXMetadata;
+@class GPXWaypoint;
+@class GPXTrack;
+@class GPXTrackSegment;
+@class GPXTrackPoint;
+@class GPXRoute;
+@class GPXRoutePoint;
 
 extern void GPXSetPath(NSString *path) NS_SWIFT_NAME(GPX.set(path:));
 

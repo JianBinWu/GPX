@@ -11,11 +11,22 @@ Pod::Spec.new do |s|
   s.author       = { "Maxime Epain" => "maxime@mapstr.com" }
   s.source       = { :git => "https://github.com/hulab/GPX.git", :tag => "v#{s.version}" }
   s.requires_arc = true
-  s.ios.deployment_target = '7.1'
+  s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.6'
-  
-  s.source_files = 'GPX/*.{h,m}'
-  s.private_header_files = 'GPX/GPXElementSubclass.h',
-                           'GPX/GPXXML.h'
+  s.default_subspec = 'Core'
 
+
+
+  ### Subspecs
+
+  s.subspec 'Core' do |ss|
+    ss.source_files = 'GPX/*.{h,m}'
+    ss.private_header_files =   'GPX/GPXElementSubclass.h',
+                                'GPX/GPXXML.h'
+  end
+
+  s.subspec 'Logger' do |ss|
+    ss.source_files = 'GPXLogger/*.{h,m}'
+    ss.dependency 'GPX/Core'
+  end
 end

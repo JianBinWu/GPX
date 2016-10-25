@@ -180,7 +180,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param path  The path to the file, device, or named socket to access.
  @param error If an error occurs, upon return contains an NSError object that describes the problem. Pass NULL if you do not want error information.
  */
-- (void)saveToPath:(NSString *)path error:(NSError **)error;
+- (BOOL)saveToPath:(NSString *)path error:(NSError **)error;
 
 
 /**
@@ -189,7 +189,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param url   The URL of the file, device, or named socket to access.
  @param error If an error occurs, upon return contains an NSError object that describes the problem. Pass NULL if you do not want error information.
  */
-- (void)saveToURL:(NSURL *)url error:(NSError **)error;
+- (BOOL)saveToURL:(NSURL *)url error:(NSError **)error;
 
 @end
 

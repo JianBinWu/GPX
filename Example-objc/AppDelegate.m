@@ -6,17 +6,22 @@
 //
 //
 
+#import <CoreLocation/CoreLocation.h>
+
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) CLLocationManager *locationManager;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    [self.locationManager requestWhenInUseAuthorization];
+    
     return YES;
 }
 

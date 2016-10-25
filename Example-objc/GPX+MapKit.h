@@ -6,8 +6,8 @@
 //
 //
 
-#import <GPX/GPX.h>
 #import <MapKit/MapKit.h>
+#import <GPX/GPX.h>
 
 @interface GPXWaypoint (MapKit) <MKAnnotation>
 
